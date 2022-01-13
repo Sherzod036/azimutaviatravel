@@ -9,55 +9,64 @@
 		<link rel="stylesheet" href="css/app.css" />
 	</head>
 	<body>
-		<header class="header">
+		<header class="header header_page">
 			<div class="header__container container">
 				<a href="#" class="header__logo">
-					<img src="img/logos/logo-light.svg" alt="" />
+					<img src="img/logos/logo.svg" alt="" />
 				</a>
 
 				<div class="header__inner">
 					<a href="tel:+998881308131" class="header__phone">
 						(+998) 88 130-81-31
 					</a>
+
 					<a href="#" class="header__button">Перезвоните мне</a>
 				</div>
 			</div>
 		</header>
 
-		<main>
-			<div class="tours">
-				<div
-					class="tour tour_main"
-					style="background-image: url('img/bgs/bg-1.png')"
-				>
-					<div class="tour__container container">
-						<span class="tour__title">Дубай</span>
-
-						<div class="tour__inner">
-							<div class="tour__links">
-								<a href="#">Цены</a>
-								<a href="#">Перечень документов</a>
-							</div>
-							<a href="#" class="tour__button">Подробно</a>
-						</div>
+		<div class="page-tours page">
+			<div class="container">
+				<div class="page-tours__about">
+					<div class="page-tours__content">
+						<span class="page-tours__content-title">О туре</span>
+						<p class="page-tours__content-desc">
+							Чтобы провести новый год успешно, надо вдохновляться успешными
+							примерами. Поэтому приглашаем вас в Дубай, невероятный современный
+							мегаполис! Вас ждут лучшие пляжи и высококлассный сервис.
+						</p>
 					</div>
+					<span class="page-tours__image">
+						<img src="img/tour.jpg" alt="" />
+					</span>
 				</div>
 
-				<div class="tour" style="background-image: url('img/bgs/bg-2.jpg')">
-					<div class="tour__container container">
-						<span class="tour__title">Шарм Эль Шейх</span>
+				<div class="page-tours__included">
+					<span class="page-tours__included-title">В стоимость включено</span>
+					<ul>
+						<li>
+							Прямой авиаперелет Ташкент-Дубаи-Ташкент (рейсы а/к Fly Dubai)
+						</li>
+						<li>Проживание в выбранном отеле</li>
+						<li>Питание завтрак</li>
+					</ul>
 
-						<div class="tour__inner">
-							<div class="tour__links">
-								<a href="#">Цены</a>
-								<a href="#">Перечень документов</a>
-							</div>
-							<a href="#" class="tour__button">Подробно</a>
-						</div>
-					</div>
+					<ul>
+						<li>Трансфер аэропорт-отель-аэропорт</li>
+						<li>Питание на борту</li>
+						<li>Виза ОАЭ</li>
+						<li>Медицинская страховка</li>
+					</ul>
+				</div>
+
+				<div class="page-tours__blocks">
+					<div class="page-tours__block"></div>
+					<div class="page-tours__block"></div>
+					<div class="page-tours__block"></div>
+					<div class="page-tours__block"></div>
 				</div>
 			</div>
-		</main>
+		</div>
 
 		<footer class="footer">
 			<div class="container">
@@ -144,6 +153,7 @@
 				</div>
 			</div>
 		</footer>
+
 		<script src="js/bundle.js"></script>
 		<script src="js/app.js"></script>
 	</body>

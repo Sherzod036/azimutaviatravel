@@ -9,6 +9,15 @@
 
 @font-face {
 	font-family: 'OpenSans';
+	src: url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
+		url('../fonts/OpenSans-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'OpenSans';
 	src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
 		url('../fonts/OpenSans-Bold.woff') format('woff');
 	font-weight: 700;
@@ -31,6 +40,7 @@ body {
 	color: #000;
 	max-width: 1920px;
 	width: 100%;
+	background-color: #f8f9ff;
 }
 
 input {
@@ -57,6 +67,8 @@ span {
 	width: 100%;
 	z-index: 100;
 	padding: 34px 0;
+	top: 0;
+	left: 0;
 	&__container {
 		display: flex;
 		align-items: center;
@@ -74,6 +86,31 @@ span {
 		padding: 11px 14px;
 		background: #ebb027;
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	}
+
+	&_page {
+		padding: 24px 0;
+		background-color: #fff;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	}
+}
+
+.page {
+	margin-top: 210px;
+}
+
+.title {
+	font-size: 60px;
+	line-height: 81px;
+	font-weight: 400;
+}
+
+.button {
+	&_big {
+		font-size: 27px;
+		line-height: 27px;
+		padding: 15px 36px;
+		background-color: #ebb027;
 	}
 }
 
@@ -199,6 +236,78 @@ span {
 				}
 			}
 		}
+	}
+}
+
+.page-contacts {
+	margin-bottom: 93px;
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 70px;
+	}
+	&__blocks {
+		display: flex;
+		background-color: #fff;
+		box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.1);
+		margin-bottom: 60px;
+	}
+	&__block {
+		width: 50%;
+		height: 379px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-left: 30px;
+	}
+	&__image {
+		width: 50%;
+		display: block;
+		height: 379px;
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
+.contact {
+	display: flex;
+	align-items: center;
+	margin-bottom: 28px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&__icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 58px;
+		height: 58px;
+		flex: 0 0 58px;
+		border-radius: 50%;
+		background-color: #ebb027;
+		margin-right: 20px;
+	}
+	&__link {
+		font-size: 22px;
+		line-height: 29px;
+		font-weight: 600;
+	}
+}
+
+.map {
+	width: 100%;
+	height: 490px;
+}
+
+.page-tours {
+	&__about {
+		display: flex;
+	}
+	&__block {
 	}
 }
 
